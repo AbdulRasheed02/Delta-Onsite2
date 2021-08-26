@@ -304,6 +304,7 @@ public class fragment1 extends Fragment {
     public void operatorEvent(View view) {
         if(noOperator && !input.isEmpty() && !(input.equals(".")) && !(input.charAt(input.length() - 1) == '.')){
             inputValue = Double.parseDouble(inputText.getText().toString());
+            noDecimal1=false;
             switch (view.getId()) {
                 case R.id.buDivide:
                     input += "/";
